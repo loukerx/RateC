@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AEF6DD121BDDB34F00182608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6DD111BDDB34F00182608 /* AppDelegate.swift */; };
-		AEF6DD141BDDB34F00182608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6DD131BDDB34F00182608 /* ViewController.swift */; };
 		AEF6DD171BDDB34F00182608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6DD151BDDB34F00182608 /* Main.storyboard */; };
 		AEF6DD191BDDB34F00182608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF6DD181BDDB34F00182608 /* Assets.xcassets */; };
 		AEF6DD1C1BDDB34F00182608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6DD1A1BDDB34F00182608 /* LaunchScreen.storyboard */; };
 		AEF6DD271BDDB34F00182608 /* RateCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6DD261BDDB34F00182608 /* RateCTests.swift */; };
 		AEF6DD321BDDB34F00182608 /* RateCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6DD311BDDB34F00182608 /* RateCUITests.swift */; };
+		AEF6DD401BDDB39900182608 /* CurrencyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6DD3F1BDDB39900182608 /* CurrencyListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		AEF6DD0E1BDDB34F00182608 /* RateC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF6DD111BDDB34F00182608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEF6DD131BDDB34F00182608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AEF6DD161BDDB34F00182608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEF6DD181BDDB34F00182608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF6DD1B1BDDB34F00182608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		AEF6DD2D1BDDB34F00182608 /* RateCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF6DD311BDDB34F00182608 /* RateCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCUITests.swift; sourceTree = "<group>"; };
 		AEF6DD331BDDB34F00182608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEF6DD3F1BDDB39900182608 /* CurrencyListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				AEF6DD111BDDB34F00182608 /* AppDelegate.swift */,
-				AEF6DD131BDDB34F00182608 /* ViewController.swift */,
-				AEF6DD151BDDB34F00182608 /* Main.storyboard */,
-				AEF6DD181BDDB34F00182608 /* Assets.xcassets */,
-				AEF6DD1A1BDDB34F00182608 /* LaunchScreen.storyboard */,
+				AEF6DD421BDDB3A900182608 /* Controller */,
+				AEF6DD411BDDB3A300182608 /* View */,
 				AEF6DD1D1BDDB34F00182608 /* Info.plist */,
 			);
 			path = RateC;
@@ -123,6 +121,24 @@
 				AEF6DD331BDDB34F00182608 /* Info.plist */,
 			);
 			path = RateCUITests;
+			sourceTree = "<group>";
+		};
+		AEF6DD411BDDB3A300182608 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEF6DD151BDDB34F00182608 /* Main.storyboard */,
+				AEF6DD181BDDB34F00182608 /* Assets.xcassets */,
+				AEF6DD1A1BDDB34F00182608 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AEF6DD421BDDB3A900182608 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEF6DD3F1BDDB39900182608 /* CurrencyListTableViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF6DD141BDDB34F00182608 /* ViewController.swift in Sources */,
+				AEF6DD401BDDB39900182608 /* CurrencyListTableViewController.swift in Sources */,
 				AEF6DD121BDDB34F00182608 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
