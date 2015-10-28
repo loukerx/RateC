@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE76CC641BE0851A004C6066 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76CC631BE0851A004C6066 /* CustomTableViewCell.swift */; };
 		AEF6DD121BDDB34F00182608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6DD111BDDB34F00182608 /* AppDelegate.swift */; };
 		AEF6DD171BDDB34F00182608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6DD151BDDB34F00182608 /* Main.storyboard */; };
 		AEF6DD191BDDB34F00182608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF6DD181BDDB34F00182608 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE76CC631BE0851A004C6066 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AEF6DD0E1BDDB34F00182608 /* RateC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF6DD111BDDB34F00182608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF6DD161BDDB34F00182608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				AEF6DD3F1BDDB39900182608 /* CurrencyListTableViewController.swift */,
+				AE76CC631BE0851A004C6066 /* CustomTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE76CC641BE0851A004C6066 /* CustomTableViewCell.swift in Sources */,
 				AEF6DD401BDDB39900182608 /* CurrencyListTableViewController.swift in Sources */,
 				AEF6DD121BDDB34F00182608 /* AppDelegate.swift in Sources */,
 			);
@@ -498,6 +502,7 @@
 				AEF6DD381BDDB34F00182608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEF6DD391BDDB34F00182608 /* Build configuration list for PBXNativeTarget "RateCTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				AEF6DD3B1BDDB34F00182608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEF6DD3C1BDDB34F00182608 /* Build configuration list for PBXNativeTarget "RateCUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +520,7 @@
 				AEF6DD3E1BDDB34F00182608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
