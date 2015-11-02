@@ -1,6 +1,6 @@
 # RateC
 
-This is a app developed by Swift for practising TDD & UI Testing.
+This is a app developed by Swift for practising.
 
 Functions:
 
