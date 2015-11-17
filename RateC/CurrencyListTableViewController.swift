@@ -14,7 +14,7 @@ class CurrencyListTableViewController: UITableViewController {
     var hotels:[String: String] = ["The Grand Del Mar": "5300 Grand Del Mar Court, San Diego, CA 92130",
         "French Quarter Inn": "166 Church St, Charleston, SC 29401",
         "Bardessono": "6526 Yount Street, Yountville, CA 94599",
-        "Hotel Yountville": "6462 Washington Street, Yountville, CA 94599",
+        "Hotel Yountville": "6462 Washington Street, Yountville, CA 94599,6462 Washington Street, Yountville, CA 94599,6462 Washington Street, Yountville, CA 94599,6462 Washington Street, Yountville, CA 94599,6462 Washington Street, Yountville, CA 94599",
         "Islington Hotel": "321 Davey Street, Hobart, Tasmania 7000, Australia",
         "The Henry Jones Art Hotel": "25 Hunter Street, Hobart, Tasmania 7000, Australia",
         "Clarion Hotel City Park Grand": "22 Tamar Street, Launceston, Tasmania 7250, Australia",
