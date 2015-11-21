@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815C06B0C6D760C303779FE2 /* Pods_RateC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB71D0FA597AB61B65263A8 /* Pods_RateC.framework */; };
 		AE76CC641BE0851A004C6066 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76CC631BE0851A004C6066 /* CustomTableViewCell.swift */; };
 		AEF6DD121BDDB34F00182608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6DD111BDDB34F00182608 /* AppDelegate.swift */; };
 		AEF6DD171BDDB34F00182608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6DD151BDDB34F00182608 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035B94DE26676ABBB0326E3F /* Pods-RateC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RateC.release.xcconfig"; path = "Pods/Target Support Files/Pods-RateC/Pods-RateC.release.xcconfig"; sourceTree = "<group>"; };
+		6AB71D0FA597AB61B65263A8 /* Pods_RateC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RateC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		829F67577EF9FAA5B186C65E /* Pods-RateC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RateC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RateC/Pods-RateC.debug.xcconfig"; sourceTree = "<group>"; };
 		AE76CC631BE0851A004C6066 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AEF6DD0E1BDDB34F00182608 /* RateC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF6DD111BDDB34F00182608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815C06B0C6D760C303779FE2 /* Pods_RateC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5024EAFA731DFF0C3AAFBFDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB71D0FA597AB61B65263A8 /* Pods_RateC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AEF6DD051BDDB34F00182608 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				AEF6DD251BDDB34F00182608 /* RateCTests */,
 				AEF6DD301BDDB34F00182608 /* RateCUITests */,
 				AEF6DD0F1BDDB34F00182608 /* Products */,
+				C796BF64EA33174117F610CD /* Pods */,
+				5024EAFA731DFF0C3AAFBFDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +159,15 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		C796BF64EA33174117F610CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				829F67577EF9FAA5B186C65E /* Pods-RateC.debug.xcconfig */,
+				035B94DE26676ABBB0326E3F /* Pods-RateC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEF6DD361BDDB34F00182608 /* Build configuration list for PBXNativeTarget "RateC" */;
 			buildPhases = (
+				83F9F45A1D65A746B0A8EDB1 /* Check Pods Manifest.lock */,
 				AEF6DD0A1BDDB34F00182608 /* Sources */,
 				AEF6DD0B1BDDB34F00182608 /* Frameworks */,
 				AEF6DD0C1BDDB34F00182608 /* Resources */,
+				14BFAC7822E1470081DDD71E /* Embed Pods Frameworks */,
+				E61B5C4D5719BB78E8DC5778 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +296,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14BFAC7822E1470081DDD71E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RateC/Pods-RateC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83F9F45A1D65A746B0A8EDB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E61B5C4D5719BB78E8DC5778 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RateC/Pods-RateC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEF6DD0A1BDDB34F00182608 /* Sources */ = {
@@ -415,6 +490,7 @@
 		};
 		AEF6DD371BDDB34F00182608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 829F67577EF9FAA5B186C65E /* Pods-RateC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RateC/Info.plist;
@@ -426,6 +502,7 @@
 		};
 		AEF6DD381BDDB34F00182608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035B94DE26676ABBB0326E3F /* Pods-RateC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RateC/Info.plist;
