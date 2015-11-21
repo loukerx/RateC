@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		815C06B0C6D760C303779FE2 /* Pods_RateC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB71D0FA597AB61B65263A8 /* Pods_RateC.framework */; };
+		AE1AEC061C009C8C009C591B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1AEC051C009C8C009C591B /* CalendarViewController.swift */; };
 		AE76CC641BE0851A004C6066 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76CC631BE0851A004C6066 /* CustomTableViewCell.swift */; };
 		AEF6DD121BDDB34F00182608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6DD111BDDB34F00182608 /* AppDelegate.swift */; };
 		AEF6DD171BDDB34F00182608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6DD151BDDB34F00182608 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		035B94DE26676ABBB0326E3F /* Pods-RateC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RateC.release.xcconfig"; path = "Pods/Target Support Files/Pods-RateC/Pods-RateC.release.xcconfig"; sourceTree = "<group>"; };
 		6AB71D0FA597AB61B65263A8 /* Pods_RateC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RateC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F67577EF9FAA5B186C65E /* Pods-RateC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RateC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RateC/Pods-RateC.debug.xcconfig"; sourceTree = "<group>"; };
+		AE1AEC051C009C8C009C591B /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		AE76CC631BE0851A004C6066 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AEF6DD0E1BDDB34F00182608 /* RateC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF6DD111BDDB34F00182608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				AEF6DD3F1BDDB39900182608 /* CurrencyListTableViewController.swift */,
 				AE76CC631BE0851A004C6066 /* CustomTableViewCell.swift */,
+				AE1AEC051C009C8C009C591B /* CalendarViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1AEC061C009C8C009C591B /* CalendarViewController.swift in Sources */,
 				AE76CC641BE0851A004C6066 /* CustomTableViewCell.swift in Sources */,
 				AEF6DD401BDDB39900182608 /* CurrencyListTableViewController.swift in Sources */,
 				AEF6DD121BDDB34F00182608 /* AppDelegate.swift in Sources */,
