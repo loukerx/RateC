@@ -10,7 +10,7 @@ import UIKit
 import CVCalendar
 
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController,CVCalendarMenuViewDelegate, CVCalendarViewDelegate {
 
     @IBOutlet weak var menuView: CVCalendarMenuView!
     
@@ -21,16 +21,33 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //background color updates
+        self.menuView.backgroundColor = UIColor.whiteColor()
+        self.calendarView.backgroundColor = UIColor.whiteColor()
+        
+        
+        self.menuView.delegate = self
+        self.calendarView.delegate = self
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func presentationMode() -> CalendarMode {
+        return CalendarMode.MonthView
+    }
+    func firstWeekday() -> Weekday {
+        return Weekday.Sunday
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        calendarView.commitCalendarViewUpdate()
+        menuView.commitMenuViewUpdate()
     }
     
-
+    
+    
+    
     /*
     // MARK: - Navigation
 
