@@ -9,8 +9,12 @@ Functions:
 
 #CocoaPod
 
+```
 * Open Terminal and navigate to the directory that contains your "XXXXXX" project
 * pod init
 * open -a Xcode Podfile
+* Podfile: pod 'CVCalendar', '~> 1.2.7'
 * pod install --verbose
-
+* pod update
+* 
+```
